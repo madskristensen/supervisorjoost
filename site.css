@@ -1,1 +1,12 @@
-﻿body{background-color:#1e1e1e}#videoArticle{text-align:center}#joostVideo{width:80%}#tweetButton{text-align:right}aside{width:100%;text-align:right}
+﻿html, body {
+    background-color: #1e1e1e;
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+#joostVideo {
+    width:100%;
+}
