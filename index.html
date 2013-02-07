@@ -1,28 +1,43 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
     <title>Supervisor Joost</title>
-    <link rel="stylesheet" type="text/css" href="site.css" />
+    <link rel="stylesheet" type="text/css" href="content/v1/site.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <meta name="description" content="Home of Supervisor Joost!" />
+    <meta name="keywords" content="supervisor joost, supervisor, joost" />
     <meta property="og:title" content="supervisiorjoost.com - His name is Joost and he&#039;s a Supervisor" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://supervisorjoost.com" />
-    <meta property="og:image" content="http://supervisorjoost.com/Videos/joost.jpg" />
+    <meta property="og:image" content="http://supervisorjoost.com/content/v1/joost.jpg" />
     <meta property="og:site_name" content="Supervisor Joost" />
     <meta property="fb:admins" content="2027016" />
 </head>
 <body>
-<!--    <aside>
-        <div class="fb-like" data-href="http://supervisorjoost.com/" data-colorscheme="dark"></div>
-        <span id="tweetButton"><a href="https://twitter.com/share" class="twitter-share-button"
-            data-url="supervisorjoost.com" data-text="Checkout supervisorjoost.com">Tweet</a></span>
-    </aside>-->
+    <h1>Supervisor Joost</h1>
+    <aside><a href="https://github.com/sayedihashimi/supervisorjoost"><span class="ghFork"></span></a></aside>
     <article id="videoArticle">
         <video controls id="joostVideo" autoplay="autoplay">
-            <source src="/Videos/joost.webm" type="video/webm" />
-            <source src="/Videos/joost.mp4" type="video/mp4" />
+            <source src="/content/v1/joost.webm" type="video/webm" />
+            <source src="/content/v1/joost.mp4" type="video/mp4" />
         </video>
     </article>
+    <script type="text/javascript">
+        // load all of the javascript after the page has fully rendered
+        function downloadJSAtOnload() {
+            var element2 = document.createElement("script");
+            element2.src = "scripts/v1/super-combined.min.js";
+            element2.async = "async";
+            document.body.appendChild(element2);
+        }
 
-    <script type="text/javascript" src="Scripts/super-combined.js"></script>
+        // Check for browser support of event handling capability
+        if (window.addEventListener)
+            window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+            window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+    </script>
 </body>
 </html>
