@@ -1,0 +1,10 @@
+# Folders to ignore #
+*.pubxml.*
+
+# Known files to ignore always #
+*.suo
+*.user
+~*.docx
+msbuild.log
+.dbshell
+*.private
