@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Supervisor Joost</title>
-    <link rel="stylesheet" type="text/css" href="content/v1/site.css" />
+    <link rel="stylesheet" type="text/css" href="content/v2/site.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />    
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
     <meta name="description" content="Home of Supervisor Joost!" />
@@ -11,24 +11,35 @@
     <meta property="og:title" content="supervisiorjoost.com - His name is Joost and he&#039;s a Supervisor" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://supervisorjoost.com" />
-    <meta property="og:image" content="http://supervisorjoost.com/content/v1/joost.jpg" />
+    <meta property="og:image" content="http://supervisorjoost.com/content/v2/joost.jpg" />
     <meta property="og:site_name" content="Supervisor Joost" />
     <meta property="fb:admins" content="2027016" />
+
+<!--    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="http://supervisorjoost.com" />
+    <meta name="twitter:title" content="Supervisor Joost!" />
+    <meta name="twitter:description" content="The best Joost video out there." />
+    <meta name="twitter:image" content="http://supervisorjoost.com/content/v2/joost.jpg" />-->
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="content/v2/joost.jpg" />  
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/v2/joost.jpg" />   
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/v2/joost.jpg" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/v2/joost.jpg" />
 </head>
 <body>
     <h1>Supervisor Joost</h1>
     <aside><a href="https://github.com/sayedihashimi/supervisorjoost"><span class="ghFork"></span></a></aside>
     <article id="videoArticle">
-        <video controls id="joostVideo" autoplay="autoplay" poster="content/v1/joost.jpg">
-            <source src="/content/v1/joost.webm" type="video/webm" />
-            <source src="/content/v1/joost.mp4" type="video/mp4" />
+        <video controls id="joostVideo" autoplay="autoplay" poster="content/v2/joost.jpg">
+            <source src="/content/v2/joost.webm" type="video/webm" />
+            <source src="/content/v2/joost.mp4" type="video/mp4" />
         </video>
     </article>
     <script type="text/javascript">
         // load all of the javascript after the page has fully rendered
         function downloadJSAtOnload() {
             var element2 = document.createElement("script");
-            element2.src = "scripts/v1/super-combined.min.js";
+            element2.src = "scripts/v2/super-combined.min.js";
             element2.async = "async";
             document.body.appendChild(element2);
         }
