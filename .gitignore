@@ -8,3 +8,4 @@
 msbuild.log
 .dbshell
 *.private
+*.js.map
