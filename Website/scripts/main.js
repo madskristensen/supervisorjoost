@@ -20,7 +20,7 @@ function RunPrefixMethod(obj, method) {
 $(function () {
     var jVideo = document.getElementById('joostVideo');
     var autoStarted = false;
-    $("#joostVideo").click(function (e) {
+    $("video").click(function (e) {
         if (!autoStarted) {
             RunPrefixMethod(jVideo, "RequestFullScreen");
             autoStarted = true;

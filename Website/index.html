@@ -1,54 +1,45 @@
 ﻿<!DOCTYPE html>
 <html lang="en-us">
 <head prefix="og: http://ogp.me/ns#">
-    <meta charset="utf-8" />
-    <title>Supervisor Joost</title>
-    <link rel="stylesheet" type="text/css" href="content/v2/site.css" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-    <meta name="description" content="Home of Supervisor Joost!" />
-    <meta name="keywords" content="supervisor joost, supervisor, joost" />
-    <meta property="og:title" content="supervisiorjoost.com - His name is Joost and he&#039;s a Supervisor" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://supervisorjoost.com" />
-    <meta property="og:image" content="http://supervisorjoost.com/content/v2/joost.jpg" />
-    <meta property="og:site_name" content="Supervisor Joost" />
-    <meta property="fb:admins" content="2027016" />
+  <meta charset="utf-8" />
+  <title>Supervisor Joost</title>
+  <link rel="stylesheet" type="text/css" href="content/v2/site.css" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+  <meta name="description" content="Home of Supervisor Joost!" />
+  <meta name="keywords" content="supervisor joost, supervisor, joost" />
+  <meta property="og:title" content="supervisiorjoost.com - His name is Joost and he&#039;s a Supervisor" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://supervisorjoost.com" />
+  <meta property="og:image" content="http://supervisorjoost.com/content/v2/joost.jpg" />
+  <meta property="og:site_name" content="Supervisor Joost" />
+  <meta property="fb:admins" content="2027016" />
 
-    <!--    <meta name="twitter:card" content="summary" />
-        <meta name="twitter:url" content="http://supervisorjoost.com" />
-        <meta name="twitter:title" content="Supervisor Joost!" />
-        <meta name="twitter:description" content="The best Joost video out there." />
-        <meta name="twitter:image" content="http://supervisorjoost.com/content/v2/joost.jpg" />-->
+  <!--    <meta name="twitter:card" content="summary" />
+      <meta name="twitter:url" content="http://supervisorjoost.com" />
+      <meta name="twitter:title" content="Supervisor Joost!" />
+      <meta name="twitter:description" content="The best Joost video out there." />
+      <meta name="twitter:image" content="http://supervisorjoost.com/content/v2/joost.jpg" />-->
 
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="content/v2/joost.jpg" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/v2/joost.jpg" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/v2/joost.jpg" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/v2/joost.jpg" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="content/v2/joost.jpg" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/v2/joost.jpg" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/v2/joost.jpg" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/v2/joost.jpg" />
 </head>
 <body>
-    <h1>Supervisor Joost</h1>
-    <aside><a href="https://github.com/sayedihashimi/supervisorjoost"><span class="ghFork"></span></a></aside>
-    <video controls id="joostVideo" autoplay="autoplay" poster="content/v2/joost.jpg">
-        <source src="/content/v2/joost.webm" type="video/webm" />
-        <source src="/content/v2/joost.mp4" type="video/mp4" />
-        <track kind="subtitles" srclang="en-us" src="/content/joost.vtt" label="English" />
-    </video>
-    <script type="text/javascript">
-        // load all of the javascript after the page has fully rendered
-        function downloadJSAtOnload() {
-            var element2 = document.createElement("script");
-            element2.src = "scripts/v2/super-combined.min.js";
-            element2.async = "async";
-            document.body.appendChild(element2);
-        }
+  <h1>Supervisor Joost</h1>
 
-        // Check for browser support of event handling capability
-        if (window.addEventListener)
-            window.addEventListener("load", downloadJSAtOnload, false);
-        else if (window.attachEvent)
-            window.attachEvent("onload", downloadJSAtOnload);
-        else window.onload = downloadJSAtOnload;
-    </script>
+  <aside>
+    <a href="https://github.com/sayedihashimi/supervisorjoost"><span class="ghFork"></span></a>
+  </aside>
+
+  <video id="joostVideo" controls autoplay loop poster="content/v2/joost.jpg">
+    <source src="/content/v2/joost.webm" type="video/webm" />
+    <source src="/content/v2/joost.mp4" type="video/mp4" />
+    <track kind="subtitles" srclang="en" src="/content/v2/joost.vtt" label="English" default />
+    <track kind="subtitles" srclang="da" src="/content/v2/joost.vtt" label="Danish" default />
+  </video>
+
+  <script src="scripts/super-combined.min.js" async></script>
 </body>
 </html>

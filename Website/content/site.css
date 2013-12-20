@@ -6,16 +6,13 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    overflow: hidden;
 }
 
-#joostVideo {
+video {
     max-width: 100%;
     height: 100%;
     z-index: -1;
-}
-
-::cue(v[voice=joost]) {
-    color: yellow;
 }
 
 .ghFork {
